@@ -1,0 +1,23 @@
+.container {
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.cont {
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont_items {
+    margin-top: 80px;
+}
+
+.items_two_line {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}

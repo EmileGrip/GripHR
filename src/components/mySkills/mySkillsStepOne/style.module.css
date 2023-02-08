@@ -1,0 +1,143 @@
+.container {
+    padding-left: 36px;
+    padding-top: 51px;
+    padding-right: 36px;
+}
+
+.title_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    color: #353C44;
+}
+
+.title_right {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    color: #353C44;
+    margin-left: 6px;
+}
+
+.upload_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 66px;
+}
+
+.camera_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camera_btn {
+    background-color: #D9D9D9;
+    width: 187px;
+    height: 187px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-width: 0;
+}
+
+.camera_img {
+    width: 86px;
+    height: 70px
+}
+
+.upload {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E394C;
+    margin-top: 15px;
+}
+
+.upload_text {
+    font-family: Poppins;
+    font-size: 48px;
+    color: #1E394C;
+    margin-left: 53px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    margin-top: 62px;
+}
+
+.upload_left_cont {
+    margin-left: 124px;
+}
+
+.upload_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1E394C
+}
+
+.upload_img_cont {
+    margin-top: 17px;
+    padding: 22px 134px 14px 127px;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upload_img {
+    width: 41px;
+}
+
+.file_name {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E394C
+}
+
+.file_limit {
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(30, 57, 76, 0.5);
+}
+
+.connect_cont {
+
+    margin-top: 17px;
+}
+
+.input {
+    background-color: #F2F2F2;
+    opacity: 0.9;
+    border-radius: 4px;
+    height: 35px;
+    padding: 9px 17px;
+    border-width: 0;
+    width: 380px;
+}
+
+.connect {
+    height: 35px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+    padding: 7px 41px;
+    background-color: #1E394C;
+    border-radius: 4px;
+    border-width: 0;
+}

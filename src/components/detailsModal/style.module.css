@@ -1,0 +1,136 @@
+.container {
+    background: #FFFFFF;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 840px;
+}
+
+.close_cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close_img {
+    width: 25px;
+    height: 25px;
+}
+
+.user_cont {
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+
+.avatar_img {
+  width: 100%;
+   max-width: 200px;
+   height: auto;
+}
+
+.user_info_cont {
+    margin-top: 46px;
+}
+
+.name {
+    font-size: 30px;
+    line-height: 45px;
+    color: #1E394C;
+}
+
+.description {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E394C;
+}
+
+.age {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(30, 57, 76, 0.5);
+}
+
+.title {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E394C;
+}
+
+.info_item_cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.min_title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E394C;
+}
+
+.min_des {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E394C;
+}
+
+.in {
+    margin-top: 61px;
+    color: #66C1FF;
+    text-underline: #66C1FF;
+    font-size: 16px;
+}
+
+.custom_modal_style {
+    inset: 50% auto auto 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 846px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+@media only screen and (max-width:900px){
+    .custom_modal_style {
+        max-width: 640px;
+    }
+    
+}
+@media only screen and (max-width:640px){
+    .custom_modal_style {
+        max-width: 400px;
+        height: 500px;
+    }
+    .avatar_img {
+  margin: 0 auto;
+}
+    .user_cont {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .user_info_cont {
+        margin-top: 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:425px) {
+    .custom_modal_style {
+        max-width: 320px;
+    }
+        .avatar_img {
+           max-width: 150px;
+        }
+
+}

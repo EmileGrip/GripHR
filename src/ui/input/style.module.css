@@ -1,0 +1,14 @@
+::placeholder {
+    color: #1E394C;
+    opacity: 0.5;
+}
+
+.input {
+    background-color: white;
+    border: 1px solid #A0A0A0;
+    border-radius: 10px;
+    padding: 14px 21px;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+}
