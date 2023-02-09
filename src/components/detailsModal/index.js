@@ -2,11 +2,8 @@ import React from "react";
 import Modal from "react-modal";
 
 import styles from "./style.module.css";
-import Close from "assets/images/close.png";
 import Avatar from "assets/images/avatar2.png";
 export const DetailsModal = (props) => {
-
-
   return (
     <Modal
       isOpen={props.modalIsOpen}
@@ -15,12 +12,29 @@ export const DetailsModal = (props) => {
     >
       <div className={styles.container}>
         <div className={styles.close_cont}>
-          <img
-            src={Close}
-            className={styles.close_img}
-            alt={"Close"}
-            onClick={props.closeModal}
-          />
+          <div onClick={props.closeModal}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={25}
+              height={25}
+              viewBox="0 0 25 25"
+              fill="none"
+              className={styles.close_img}
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M24.4775 0.523024C25.1748 1.22039 25.1748 2.35104 24.4775 3.0484L3.04889 24.477C2.35153 25.1743 1.22088 25.1743 0.523512 24.477C-0.173853 23.7796 -0.173853 22.649 0.523512 21.9516L21.9521 0.523024C22.6494 -0.174341 23.7801 -0.174341 24.4775 0.523024Z"
+                fill="#1E394C"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M0.523512 0.523024C1.22088 -0.174341 2.35153 -0.174341 3.04889 0.523024L24.4775 21.9516C25.1748 22.649 25.1748 23.7796 24.4775 24.477C23.7801 25.1743 22.6494 25.1743 21.9521 24.477L0.523512 3.0484C-0.173853 2.35104 -0.173853 1.22039 0.523512 0.523024Z"
+                fill="#1E394C"
+              />
+            </svg>
+          </div>
         </div>
         <div className={styles.user_cont}>
           <img src={Avatar} alt={"Avatar"} className={styles.avatar_img} />
@@ -51,7 +65,7 @@ export const DetailsModal = (props) => {
               <p className={styles.min_des}>22 Aug 2020</p>
             </div>
             <div className={styles.info_item_cont}>
-              <p className={styles.min_title}>ID</p>
+              <p className={styles.min_title}>Company ID</p>
               <p className={styles.min_des}>630943f7741fe703</p>
             </div>
             <p className={styles.in}>See Full Bio</p>

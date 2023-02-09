@@ -14,8 +14,18 @@
 .close_img {
     width: 25px;
     height: 25px;
+
+    cursor: pointer;
+
 }
 
+.close_cont path {
+    transition: all 0.3s linear;
+}
+
+.close_img:hover path {
+    fill: #f50000;
+}
 .title {
     font-size: 30px;
     line-height: 45px;

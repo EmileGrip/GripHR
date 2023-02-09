@@ -20,7 +20,7 @@ import Avatar from 'assets/images/avatar.png';
 import Down from 'assets/images/down.png';
 
 export const Header = (props) => {
-    let [route, setRoute] = useState(['Canditates', 'Progress', 'Employees'])
+    let [route, setRoute] = useState(['Candidates', 'Progress', 'Employees'])
     let [title, setTitle] = useState('Employees')
     let location = useLocation()
 
@@ -28,7 +28,7 @@ export const Header = (props) => {
     let locationRoute = useCallback(() => {
         switch (location.pathname) {
             case ADMIN_EMPLOYEES_PAGE_ROUTE:
-                setRoute(['Canditates', 'Progress', 'Employees']);
+                setRoute(["Candidates", "Progress", "Employees"]);
                 setTitle('Employees')
                 break
             case ADMIN_FRAMEWORK_PAGE_ROUTE:

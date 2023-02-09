@@ -26,16 +26,17 @@ ChartJS.register(
 );
 
 export const options = {
-    responsive: true,
-    plugins: {
-        legend: {
-            position: 'top',
-        },
-        title: {
-            display: true,
-            text: 'Usage Analysis',
-        },
+  responsive: true,
+  plugins: {
+    legend: {
+      position: "top",
     },
+    title: {
+      display: true,
+      text: "Usage Analysis",
+    },
+  },
+  maintainAspectRatio: false,
 };
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octorber', 'Nobember', 'December'];
@@ -119,7 +120,7 @@ export const  SkillsAnalysis =()=>{
                 </div>
             </div>
             <div className={styles.analysis_cont}>
-                <Bar options={options} data={data} />;
+                <Bar options={options} data={data} />
             </div>
 
         </div>
