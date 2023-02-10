@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .ReactModal__Content--after-open {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 846px;
+    width: 100%;
+}
+.ReactModal__Content--after-open {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 846px;
+    width: 100%;
+} */
+.custom_modal_style {
+    inset: 50% auto auto 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 846px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

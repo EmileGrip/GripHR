@@ -1,0 +1,134 @@
+.container {
+    width: 840px;
+    height: 725px;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+
+.close_cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.close_img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.close_cont path {
+    transition: all 0.3s linear;
+}
+
+.close_img:hover path {
+    fill: #f50000;
+}
+.title {
+    font-size: 30px;
+    margin-left: 90px;
+    line-height: 45px;
+    color: #1E394C;
+}
+
+.form_cont {
+    margin-left: 90px;
+    margin-top: 42px;
+}
+
+.input_title {
+    font-size: 24px;
+    line-height: 36px;
+    color: #1E394C;
+}
+
+.input_cont {
+    width: 70%;
+    margin-top: 21px;
+    margin-right: 20px;
+    padding: 9px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    opacity: 0.9;
+    border-radius: 6px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
+.input {
+    outline: none;
+    border-width: 0;
+    background-color: #F2F2F2;
+    color: #353C44;
+    margin-left: 15px;
+}
+
+.upload_form_cont {
+    margin-right: 100px;
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 54px;
+}
+
+.upload_left_cont {
+
+}
+
+.upload_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1E394C
+}
+
+.upload_img_cont {
+    margin-top: 17px;
+    padding: 21px 127px 14px 127px;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upload_img {
+    width: 41px;
+}
+
+.file_name {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E394C
+}
+
+.file_limit {
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(30, 57, 76, 0.5);
+}
+
+.upload_right_cont {
+
+}
+
+.form_item_cont {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_item_name {
+    margin-right: 40px;
+    font-weight: 500;
+    color: #1E394C;
+    font-size: 16px;
+}
