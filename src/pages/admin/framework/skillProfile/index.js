@@ -67,7 +67,7 @@ export const AdminSkillProfile = () => {
 
     return (
         <div className={styles.container}>
-            <div>
+            <div className={styles.header_wrap}>
                 <div className={styles.header__min_cont}>
                     <div className={styles.title_cont}>
                         <p className={styles.title}>Senior UI Developer</p>
@@ -89,6 +89,7 @@ export const AdminSkillProfile = () => {
                     <img src={Edit} className={styles.edit_img} alt={'Edit'}/>
                 </div>
             </div>
+            <div className={styles.body_wrap}>
             <div className={styles.body_cont}>
                 <div className={styles.titles_cont}>
                     <div className={styles.titles_min_cont}>
@@ -102,6 +103,8 @@ export const AdminSkillProfile = () => {
                     </div>
                 </div>
                 {_renderSkill()}
+            </div>
+
             </div>
         </div>
     )

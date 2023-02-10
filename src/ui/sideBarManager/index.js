@@ -21,6 +21,7 @@ import Logo from 'assets/images/logo.png'
 
 export const SideBarManager = () => {
     let [analyticsFlag, setAnalyticsFlag] = useState(false)
+    let [sidebarActive, setSidebarActive] = useState(false);
     let [analytics] = useState([
         {
             id: 1,
@@ -34,8 +35,15 @@ export const SideBarManager = () => {
         },
     ])
 
+     const handleActive = () => {
+       setSidebarActive((prev) => !prev);
+     };
     return (
-      <div className={styles.container}>
+      <div
+        className={`${styles.container} ${
+          sidebarActive ? styles.active_sidebar : null
+        }`}
+      >
         <div>
           <img src={Logo} className={styles.logo} alt={"logo"} />
           <NavLink
@@ -140,6 +148,25 @@ export const SideBarManager = () => {
             <img src={LogOut} className={styles.link_icon} alt={"link"} />
             Log Out
           </NavLink>
+        </div>
+        <div
+          className={`${styles.arrow_box} ${
+            sidebarActive ? styles.active_sidebar : null
+          }`}
+          onClick={handleActive}
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth={0}
+            viewBox="0 0 24 24"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M6.23 20.23L8 22l10-10L8 2 6.23 3.77 14.46 12z" />
+          </svg>
         </div>
       </div>
     );

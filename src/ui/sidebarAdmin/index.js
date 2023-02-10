@@ -55,7 +55,7 @@ export const SideBarAdmin = () => {
   return (
     <div
       className={`${styles.container} ${
-        sidebarActive && styles.active_sidebar
+        sidebarActive ? styles.active_sidebar : null
       }`}
     >
       <div>
@@ -181,7 +181,7 @@ export const SideBarAdmin = () => {
       </div>
       <div
         className={`${styles.arrow_box} ${
-          sidebarActive && styles.active_sidebar
+          sidebarActive ? styles.active_sidebar : null
         }`}
         onClick={handleActive}
       >
