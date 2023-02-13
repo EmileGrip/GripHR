@@ -25,6 +25,10 @@
 
 .cont_items {
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    flex-wrap: wrap;
 }
 
 .one_item {
@@ -35,8 +39,6 @@
 }
 
 .plus_div_left {
-    position: absolute;
-    left: 300px;
     width: 15px;
     height: 15px;
     border: 1px solid #66C1FF;
@@ -47,8 +49,8 @@
 }
 
 .plus_div_right {
-    position: absolute;
-    right: 300px;
+    /* position: absolute;
+    right: 300px; */
     width: 15px;
     height: 15px;
     border: 1px solid #66C1FF;
@@ -64,15 +66,29 @@
 }
 
 .items_two_line {
-    margin-top: 100px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 88px;
 }
 
-.plus{
+.plus {
     margin-top: 10px;
 }
 
 .plus_div {
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .items_two_line {
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 0;
+    }
+
 }
