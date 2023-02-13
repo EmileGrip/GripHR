@@ -16,7 +16,8 @@ import {
     EMPLOYEE_EXPERIENCE_LEARNING_PAGE_ROUTE,
     EMPLOYEE_SKILLS_MY_PAGE_ROUTE,
     EMPLOYEE_SKILLS_DEVELOPMENT_PAGE_ROUTE,
-    MANAGER_EMPLOYEES_PAGE_ROUTE, MANAGER_FRAMEWORK_PAGE_ROUTE,
+    MANAGER_EMPLOYEES_PAGE_ROUTE,
+    MANAGER_FRAMEWORK_PAGE_ROUTE,
 
 } from 'routes/route-path';
 import styles from './style.module.css';
@@ -69,6 +70,7 @@ export const Header = (props) => {
             case EMPLOYEE_SKILLS_MY_PAGE_ROUTE:
                 setRoute(['Skills', 'My Skills', 'Initial Setup']);
                 setTitle('Skills')
+                break
             case EMPLOYEE_SKILLS_DEVELOPMENT_PAGE_ROUTE:
                 setRoute(['Skills', 'Development']);
                 setTitle('Skills')

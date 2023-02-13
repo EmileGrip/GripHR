@@ -24,9 +24,37 @@ export const LearningExperience = () => {
 
         },
     ])
+    let [courses] = useState([
+        {
+            name: 'Marketing Manager',
+            type: 'course'
+
+        },
+        {
+            name: 'Marketing Manager',
+            type: 'course'
+
+        },
+        {
+            name: 'Marketing Manager',
+            type: 'course'
+
+        },
+        {
+            name: 'Marketing Manager',
+            type: 'course'
+
+        },
+    ])
 
     let _renderEducationItem = () => {
         return data.map((item, index) => {
+            return <EducationItem key={index} type={item.type}/>
+        })
+    }
+
+    let _renderCourseItem = () => {
+        return courses.map((item, index) => {
             return <EducationItem key={index}/>
         })
     }
@@ -67,7 +95,7 @@ export const LearningExperience = () => {
                 />
             </div>
             <div className={styles.education_cont}>
-                {_renderEducationItem()}
+                {_renderCourseItem()}
             </div>
             <AddEducationModal
                 modalIsOpen={visibilityAdd}

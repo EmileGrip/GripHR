@@ -10,6 +10,7 @@ import {
 import Vector from "assets/images/Vector.png";
 import Dote from "assets/images/dots.png";
 import Edit from "assets/images/edit.png";
+import Plus from "../../../assets/images/plus.png";
 
 export const ManagerFramework = (props) => {
     let [templateModal, setTemplateModal] = useState(false)
@@ -44,7 +45,15 @@ export const ManagerFramework = (props) => {
                     <img src={Edit} alt={'Edit'} className={styles.icon}/>
                 </div>
                 <div className={styles.cont_items}>
-                    {_renderItem()}
+                    <div className={styles.one_item}>
+                        <div className={styles.plus_div_left}>
+                            <img src={Plus} className={styles.plus_img}/>
+                        </div>
+                        {_renderItem()}
+                        <div className={styles.plus_div_right}>
+                            <img src={Plus} className={styles.plus_img}/>
+                        </div>
+                    </div>
                     <div className={styles.items_two_line}>
                         {_renderItem()}
                         {_renderItem()}

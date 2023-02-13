@@ -19,7 +19,11 @@ export const EducationItem = (props) => {
                 <p className={styles.description_text}>Manchester University</p>
                 <p className={styles.description_text_date}>abr. 2012 - oct. 2017</p>
             </div>
-            <p className={styles.status_text}>PHd</p>
+            {props.type === 'course' ?
+                null
+                :
+                <p className={styles.status_text}>PHd</p>
+            }
         </div>
     );
 }
