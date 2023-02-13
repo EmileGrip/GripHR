@@ -3,6 +3,8 @@ import React, {useState} from "react";
 import styles from './style.module.css'
 import { Button } from "ui";
 import { SkillDeveloperItem, SkillModal } from "components";
+import Info from 'assets/images/info_1.png';
+
 export const MySkillsStepTwo = () => {
     let [skillOpenModal, setSkillOpenModal] = useState(false)
     let [data] = useState([
@@ -94,6 +96,11 @@ export const MySkillsStepTwo = () => {
                 </div>
                 {_renderSkill()}
             </div>
+            <p className={styles.title_skills}>Skills Wishlist</p>
+          <div className={styles.wishlist_div}>
+              <p className={styles.wishlist_text}>Analytical Thinking</p>
+              <img src={Info} className={styles.info_icon}/>
+          </div>
             <SkillModal
                 modalIsOpen={skillOpenModal}
                 closeModal={() => setSkillOpenModal(false)}

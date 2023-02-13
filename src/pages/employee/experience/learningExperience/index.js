@@ -66,10 +66,11 @@ export const LearningExperience = () => {
                 <Button
                     text={'Add Education +'}
                     style={{
-                        paddingLeft: 20,
-                        paddingRight: 20,
-                        paddingTop: 7,
-                        paddingBottom: 7,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        width: 150,
+                        height: 30,
                         fontSize: 14,
                         fontWeight: '600'
                     }}
@@ -84,10 +85,11 @@ export const LearningExperience = () => {
                 <Button
                     text={'Add Course +'}
                     style={{
-                        paddingLeft: 20,
-                        paddingRight: 20,
-                        paddingTop: 7,
-                        paddingBottom: 7,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        width: 150,
+                        height: 30,
                         fontSize: 14,
                         fontWeight: '600'
                     }}

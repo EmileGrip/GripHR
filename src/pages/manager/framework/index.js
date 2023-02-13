@@ -55,9 +55,24 @@ export const ManagerFramework = (props) => {
                         </div>
                     </div>
                     <div className={styles.items_two_line}>
-                        {_renderItem()}
-                        {_renderItem()}
-                        {_renderItem()}
+                        <div className={styles.plus_div}>
+                            {_renderItem()}
+                            <div className={styles.plus}>
+                                <img src={Plus} className={styles.plus_img}/>
+                            </div>
+                        </div>
+                        <div className={styles.plus_div}>
+                            {_renderItem()}
+                            <div className={styles.plus}>
+                                <img src={Plus} className={styles.plus_img}/>
+                            </div>
+                        </div>
+                        <div className={styles.plus_div}>
+                            {_renderItem()}
+                            <div className={styles.plus}>
+                                <img src={Plus} className={styles.plus_img}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

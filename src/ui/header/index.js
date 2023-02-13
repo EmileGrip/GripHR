@@ -76,7 +76,7 @@ export const Header = (props) => {
                 setTitle('Skills')
                 break
             case MANAGER_EMPLOYEES_PAGE_ROUTE:
-                setRoute(['Canditates', 'Progress', 'Employees']);
+                setRoute(['Candidates', 'Progress', 'Employees']);
                 setTitle('Employees')
                 break
             case MANAGER_FRAMEWORK_PAGE_ROUTE:
