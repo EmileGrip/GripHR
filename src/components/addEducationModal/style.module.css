@@ -1,5 +1,4 @@
 .container {
-    width: 840px;
     height: 513px;
     background: #FFFFFF;
     border-radius: 25px;
@@ -26,6 +25,7 @@
 .close_img:hover path {
     fill: #f50000;
 }
+
 .title {
     font-size: 30px;
     line-height: 45px;
@@ -77,4 +77,93 @@
 
 .btn_cont {
     margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.btn_cont>button {
+    padding: 7px 50px;
+}
+
+.btn_cont>button:last-child {
+    background-color: #fff;
+    color: #1E394C;
+    border-width: 1px;
+    border-color: #1E394C;
+
+}
+
+.custom_modal_style {
+    inset: 50% auto auto 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 846px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+
+@media only screen and (max-width:900px) {
+    .custom_modal_style {
+        max-width: 640px;
+    }
+
+    .form_cont {
+        max-width: 613px;
+        width: 100%;
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+    .container {
+        padding-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width:640px) {
+    .custom_modal_style {
+        max-width: 400px;
+        height: 500px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .form_cont {
+        justify-content: center;
+    }
+
+    .btn_cont {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .btn_cont>button {
+        padding: 7px;
+        max-width: 200px;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width:425px) {
+    .custom_modal_style {
+        max-width: 320px;
+    }
+    .container {
+        padding-left: 0px;
+    }
+
 }
