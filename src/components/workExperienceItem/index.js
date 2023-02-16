@@ -8,7 +8,9 @@ export const WorkExperienceItem = () => {
 
     return (
         <div className={styles.container}>
-            <img src={ExperienceItem} alt={'ExperienceItem'} className={styles.experienceItem_img}/>
+            <div className={styles.img_wrap}>
+                <img src={ExperienceItem} alt={'ExperienceItem'} className={styles.experienceItem_img}/>
+            </div>
             <div className={styles.cont}>
                 <div className={styles.tit_cont}>
                     <p className={styles.title_name}>Marketing Manager</p>

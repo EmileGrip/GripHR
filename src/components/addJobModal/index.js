@@ -5,22 +5,13 @@ import styles from './style.module.css';
 import {Button, Input} from "ui";
 
 export const AddJobModal = (props) => {
-    const customStyles = {
-        content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-        },
-    };
+
 
     return (
       <Modal
         isOpen={props.modalIsOpen}
         onRequestClose={props.closeModal}
-        style={customStyles}
+        className={styles.custom_modal_style}
       >
         <div className={styles.container}>
           <div className={styles.close_cont}>
@@ -113,26 +104,11 @@ export const AddJobModal = (props) => {
           <div className={styles.btn_cont}>
             <Button
               text={"Finish"}
-              style={{
-                paddingRight: 50,
-                paddingLeft: 50,
-                paddingTop: 7,
-                paddingBottom: 7,
-              }}
+             
             />
             <Button
               text={"Cancel"}
-              style={{
-                paddingRight: 50,
-                paddingLeft: 50,
-                paddingTop: 7,
-                paddingBottom: 7,
-                backgroundColor: "#fff",
-                color: "#1E394C",
-                borderWidth: 1,
-                borderColor: "#1E394C",
-                marginLeft: 30,
-              }}
+             
             />
           </div>
         </div>

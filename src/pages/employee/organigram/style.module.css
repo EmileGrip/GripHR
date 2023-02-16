@@ -10,6 +10,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .cont_items {
@@ -20,4 +21,10 @@
     margin-top: 100px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 88px;
+
+}
+@media only screen and (max-width:425px) {
+    
 }

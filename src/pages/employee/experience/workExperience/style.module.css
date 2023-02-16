@@ -17,3 +17,15 @@
     font-size: 24px;
     color: #353C44;
 }
+
+@media only screen and (max-width: 425px) {
+    .container {
+        flex: 1;
+        padding: 25px 20px;
+    }
+    .head_cont {
+        flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+    }
+}

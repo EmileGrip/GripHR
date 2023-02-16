@@ -1,6 +1,4 @@
 .container {
-    padding-left: 44px;
-    padding-right: 44px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,6 +89,8 @@
     color: #1E1E1E;
     margin-left: 5px;
 }
+
+
 
 
 @media only screen and (max-width: 425px) {
