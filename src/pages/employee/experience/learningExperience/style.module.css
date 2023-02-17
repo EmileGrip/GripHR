@@ -28,6 +28,13 @@
     margin-bottom: 54px;
 }
 
+@media only screen and (max-width: 768px) {
+
+    .education_cont {
+        
+        justify-content: center;
+    }
+}
 @media only screen and (max-width: 480px) {
 
     .head_cont {

@@ -29,26 +29,31 @@
 }
 
 .cont {
-    height: 58vh;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .role_div {
     margin-top: 118px;
     display: flex;
     align-items: center;
+    width: 100%;
+    gap: 150px;
+
 }
 
 .role_item_div {
-    width: 226px;
-    height: 40px;
     background: #E5F3FC;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 226px;
+    width: 100%;
+    padding: 10px 0;
 }
 
 .role_item_text {
@@ -61,9 +66,9 @@
 
 .border_div {
     border: 2px dashed #E0E0E0;
-    width: 120px;
     height: 0;
-    margin-left: 100px;
+    max-width: 120px;
+    width: 100%;
 }
 
 .add_div {
@@ -71,7 +76,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
+
 }
 
 .plus_icon {
@@ -90,7 +95,7 @@
     border-top: 2px solid #E9E9E9;
 }
 
-.title_rec{
+.title_rec {
     font-family: 'Poppins', serif;
     font-weight: 600;
     font-size: 24px;
@@ -104,13 +109,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .recommended_div {
     background: #FAFAFA;
     border: 2px solid #EEEEEE;
     border-radius: 10px;
-    width: 30%;
+    width: 100%;
+    max-width: 468px;
     padding: 19px 20px;
 }
 
@@ -140,4 +149,17 @@
     line-height: 24px;
     color: #39A430;
     margin-left: 9px;
+}
+
+@media only screen and (max-width: 768px) {
+    .role_div {
+        flex-wrap: wrap;
+        gap: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .role_text {
+        margin-top: 50px;
+    }
 }

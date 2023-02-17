@@ -5,48 +5,63 @@
     border-radius: 25px;
     padding: 21px;
 }
-.title_cont{
+
+.title_cont {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap:5px;
 }
-.title_text{
+
+.title_text {
     font-family: 'Poppins', serif;
     font-size: 20px;
     color: #707070;
 }
-.edit_cont{
+
+.edit_cont {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-.edit_text{
+
+.edit_text {
     font-family: Poppins, serif;
     font-size: 14px;
     color: rgba(30, 57, 76, 0.5);
 }
-.edit_img{
+
+.edit_img {
     margin-top: -3px;
     width: 12px;
     height: 12px;
     margin-left: 8px;
 }
-.description_cont{
+
+.description_cont {
     display: flex;
     align-items: center;
+    gap: 9px;
+    flex-wrap: wrap;
 }
-.description_text{
+
+.description_text {
     font-family: 'Poppins', serif;
     font-size: 16px;
     color: #808080;
 }
-.description_text_date{
+
+.description_text_date {
     font-family: 'Poppins', serif;
     font-size: 16px;
     color: #AAAAAA;
-    margin-left: 9px;
+   
 }
-.status_text{
+
+.status_text {
     margin-top: 4px;
     font-family: 'Poppins', serif;
     font-size: 16px;
@@ -54,16 +69,26 @@
     color: #AAAAAA;
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 430px;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .title_text {
         font-size: 18px;
     }
+
     .description_text {
         font-size: 14px;
     }
+
     .description_text_date {
         font-size: 14px;
     }
+
     .container {
         margin-right: 0;
     }
