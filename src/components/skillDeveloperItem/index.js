@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 import styles from './style.module.css'
-import Dots from 'assets/images/dots_2.png'
+import Info from 'assets/images/info_1.png'
 import Done from 'assets/images/done.png'
 
 export const SkillDeveloperItem = (props) => {
@@ -16,8 +16,8 @@ export const SkillDeveloperItem = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.min_cont}>
-                <img src={Dots} alt={'Dots'} className={styles.dots_img}/>
-                <p className={styles.name}>Critical Thinking</p>
+                <p className={styles.name}>Analytical Thinking</p>
+                <img src={Info} className={styles.info_icon}/>
             </div>
             <div className={styles.min_cont}>
                 <p className={styles.description}>

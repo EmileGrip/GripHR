@@ -10,10 +10,12 @@ export const HeaderOrganigram = (props) => {
 
     return (
         <div className={styles.continer}>
-            <img src={Logo} alt={'logo'} className={styles.logo_img}/>
-            <p className={styles.title}>Organigram</p>
+            <div className={styles.cont}>
+                <img src={Logo} alt={'logo'} className={styles.logo_img}/>
+                <p className={styles.title}>Organigram</p>
+            </div>
             <div className={styles.icons_cont}>
-                <img src={HeaderIcons} alt={'Header Icons'} className={styles.header_icons}/>
+
                 <Button
                     text={'Finish'}
                     style={{

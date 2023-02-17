@@ -1,0 +1,143 @@
+.container {
+    flex: 1;
+    padding: 25px 36px;
+}
+
+.head_cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 11px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.title {
+    font-family: Poppins, serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #353C44;
+}
+
+.role_text {
+    margin-top: 110px;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+}
+
+.cont {
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.role_div {
+    margin-top: 118px;
+    display: flex;
+    align-items: center;
+}
+
+.role_item_div {
+    width: 226px;
+    height: 40px;
+    background: #E5F3FC;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role_item_text {
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #353C44;
+}
+
+.border_div {
+    border: 2px dashed #E0E0E0;
+    width: 120px;
+    height: 0;
+    margin-left: 100px;
+}
+
+.add_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.plus_icon {
+    width: 15px;
+    height: 15px;
+}
+
+.add_text {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #66C1FF;
+}
+
+.recommend {
+    border-top: 2px solid #E9E9E9;
+}
+
+.title_rec{
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 19px;
+
+    color: #353C44;
+}
+
+.recommended {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommended_div {
+    background: #FAFAFA;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    width: 30%;
+    padding: 19px 20px;
+}
+
+.recommended_title {
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #353C44;
+}
+
+.recommended_status_div {
+    display: flex;
+    align-items: center;
+}
+
+.recommended_status_title {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+}
+
+.recommended_status {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #39A430;
+    margin-left: 9px;
+}

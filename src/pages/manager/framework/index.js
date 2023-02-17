@@ -39,39 +39,19 @@ export const ManagerFramework = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.cont}>
-                <div className={styles.icon_cont}>
-                    <img src={Vector} alt={'Vector'} className={styles.icon}/>
-                    <img src={Dote} alt={'Dote'} className={styles.icon}/>
-                    <img src={Edit} alt={'Edit'} className={styles.icon}/>
-                </div>
                 <div className={styles.cont_items}>
                     <div className={styles.one_item}>
-                        <div className={styles.plus_div_left}>
-                            <img src={Plus} className={styles.plus_img}/>
-                        </div>
                         {_renderItem()}
-                        <div className={styles.plus_div_right}>
-                            <img src={Plus} className={styles.plus_img}/>
-                        </div>
                     </div>
                     <div className={styles.items_two_line}>
                         <div className={styles.plus_div}>
                             {_renderItem()}
-                            <div className={styles.plus}>
-                                <img src={Plus} className={styles.plus_img}/>
-                            </div>
                         </div>
                         <div className={styles.plus_div}>
                             {_renderItem()}
-                            <div className={styles.plus}>
-                                <img src={Plus} className={styles.plus_img}/>
-                            </div>
                         </div>
                         <div className={styles.plus_div}>
                             {_renderItem()}
-                            <div className={styles.plus}>
-                                <img src={Plus} className={styles.plus_img}/>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,9 @@
 .container {
     margin-top: 20px;
-    width: 100%;
+    width: 47%;
     background: #FAFAFA;
     border-radius: 25px;
     padding: 21px;
-    margin-right: 29px;
-    max-width: 569px;
 }
 .title_cont{
     display: flex;

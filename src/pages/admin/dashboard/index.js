@@ -12,20 +12,12 @@ export const AdminDashboard = () => {
 
     return (
         <div className={styles.container}>
-            {show ?
-                <SideBarAdmin />
-                :
-                null
-            }
+            <SideBarAdmin/>
             <div className={styles.outlet}>
-                {show ?
-                    <Header/>
-                    :
-                    null
-                }
-                 <div className={styles.scroll}>
-                     <Outlet context={changeShow}/>
-                 </div>
+                <Header/>
+                <div className={styles.scroll}>
+                    <Outlet context={changeShow}/>
+                </div>
             </div>
         </div>
     )
