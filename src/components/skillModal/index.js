@@ -6,22 +6,13 @@ import Search from "assets/images/search.png";
 import {Button, Input} from "ui";
 
 export const SkillModal = (props) => {
-    const customStyles = {
-        content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-        },
-    };
+   
 
     return (
       <Modal
         isOpen={props.modalIsOpen}
         onRequestClose={props.closeModal}
-        style={customStyles}
+        className={styles.custom_modal_style}
       >
         <div className={styles.container}>
           <div className={styles.close_cont}>

@@ -9,12 +9,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .title_cont {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -52,6 +56,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -60,7 +66,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #66C1FF;
-    margin-right: 27px;
+    
 }
 
 .body_cont {
@@ -111,3 +117,68 @@
     height: 15px;
     margin-left: 15px;
 }
+
+@media only screen and (max-width: 768px) {
+    .body_wrap {
+        max-width: 668px;
+    }
+
+    .body_cont {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        flex-direction: column;
+    }
+
+    .body_cont>div {
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .wishlist_text {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 800px) {
+   .body_cont {
+    max-width: 768px;
+    overflow-y: hidden;
+   }
+   
+}
+@media only screen and (max-width: 768px) {
+   .body_cont {
+    max-width: 600px;
+    overflow-y: hidden;
+   }
+
+}
+@media only screen and (max-width: 600px) {
+   .body_cont {
+    max-width: 450px;
+    overflow-y: hidden;
+   }
+
+}
+@media only screen and (max-width: 500px) {
+   .body_cont {
+    max-width: 350px;
+    overflow-y: hidden;
+   }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .title {
+        font-size: 18px;
+    }
+    .title_right {
+        font-size: 18px;
+    }
+         .body_cont {
+             max-width: 320px;
+             overflow-y: hidden;
+         }
+}
+
