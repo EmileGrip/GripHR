@@ -1,5 +1,7 @@
 import React, {useState} from "react";
-
+import * as jsPlumbBrowserUI from "@jsplumb/browser-ui";
+import { DotEndpoint } from "@jsplumb/core";
+import { FlowchartConnector } from "@jsplumb/connector-flowchart";
 import styles from './style.module.css'
 import {Button} from "ui";
 import Plus from 'assets/images/plus.png'

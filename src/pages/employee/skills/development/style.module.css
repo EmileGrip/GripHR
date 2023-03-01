@@ -29,11 +29,11 @@
 }
 
 .cont {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
+    height: 60vh;
 }
 
 .role_div {

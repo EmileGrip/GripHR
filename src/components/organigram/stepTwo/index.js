@@ -51,13 +51,7 @@ export const OrganigramStepTwo = () => {
 
                 <div className={styles.cont_items}>
                     <div className={styles.one_item}>
-                        <div className={styles.plus_div_left}>
-                            <img src={Plus} className={styles.plus_img}/>
-                        </div>
                         {_renderItem()}
-                        <div className={styles.plus_div_right}>
-                            <img src={Plus} className={styles.plus_img}/>
-                        </div>
                     </div>
                     <div className={styles.items_two_line}>
                         <div className={styles.plus_div}>
