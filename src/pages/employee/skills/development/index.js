@@ -2,9 +2,11 @@ import React, {useState} from "react";
 import * as jsPlumbBrowserUI from "@jsplumb/browser-ui";
 import { DotEndpoint } from "@jsplumb/core";
 import { FlowchartConnector } from "@jsplumb/connector-flowchart";
+
 import styles from './style.module.css'
 import {Button} from "ui";
 import Plus from 'assets/images/plus.png'
+import Tree from 'assets/images/tree.png'
 
 export const Development = () => {
     let [recommended] = useState([
@@ -56,7 +58,8 @@ export const Development = () => {
             </div>
             <p className={styles.role_text}>Current Role</p>
             <div className={styles.cont}>
-                <div className={styles.role_div}>
+                <img src={Tree} className={styles.tree}/>
+              {/*  <div className={styles.role_div}>
                     <div className={styles.role_item_div}>
                         <p className={styles.role_item_text}>Customer Specialist</p>
                     </div>
@@ -71,7 +74,7 @@ export const Development = () => {
                     <div className={styles.recommended}>
                         {_renderRecommended()}
                     </div>
-                </div>
+                </div>*/}
             </div>
         </div>
     )

@@ -35,7 +35,10 @@
     gap: 40px;
     height: 60vh;
 }
-
+.tree{
+    margin-top: 40px;
+    width: 120vh;
+}
 .role_div {
     margin-top: 118px;
     display: flex;
